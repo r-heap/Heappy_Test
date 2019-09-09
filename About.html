@@ -88,23 +88,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
          <a href="JavaScript:void(0);" ondblclick="alert('Well done!')">Double Click Me!</a>
       </div>
    <div>
+      <br>
+      <br>
       <iframe width="400" height="400" src="https://r-heap.github.io/Heappy_Test/About.html"> </iframe>
          
-         var iframe = document.getElementById('frameID'),
-    iframeWin = iframe.contentWindow || iframe,
-    iframeDoc = iframe.contentDocument || iframeWin.document;
 
-window.hello = function () {
-    alert('hello from owner!');
-};
-
-$(iframeDoc).ready(function (event) {
-    iframeDoc.open();
-    iframeDoc.write('iframe here');
-    iframeDoc.write('\<script>alert("hello from iframe!");\<\/script>');
-    iframeDoc.write('\<script>parent.hello();\<\/script>');
-    iframeDoc.close();
-});
          
       
    
