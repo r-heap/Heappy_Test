@@ -6,6 +6,23 @@
       alert("hello I'm an alert bot");
       }
    </script>
+      <script>
+   (function(){
+  var scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+  var quarterHeight = scrollHeight / 4;
+  var quarters = 0;
+  var scrollDistance, divisible, percent;
+  document.addEventListener("scroll", function() {
+      scrollDistance = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+      divisible =  Math.trunc(scrollDistance / quarterHeight);
+    if (quarters < divisible){
+      scrollPercent = divisible * 25;
+      heap.track('Scroll Depth', {percent: scrollPercent});
+      quarters++;
+    }
+  });
+}());
+   </script>
 </head>
 <body>
     <h1>
@@ -92,21 +109,7 @@
       </iframe>        
 
   </body>
-   (function(){
-  var scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-  var quarterHeight = scrollHeight / 4;
-  var quarters = 0;
-  var scrollDistance, divisible, percent;
-  document.addEventListener("scroll", function() {
-      scrollDistance = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
-      divisible =  Math.trunc(scrollDistance / quarterHeight);
-    if (quarters < divisible){
-      scrollPercent = divisible * 25;
-      heap.track('Scroll Depth', {percent: scrollPercent});
-      quarters++;
-    }
-  });
-}());
+
 </html>
   
   
