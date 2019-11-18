@@ -22,6 +22,12 @@
 
   videoPlayer.on('play', function() {
     console.log('Played the video');
+   heap.track ('Played Video');
+  });
+   
+   videoPlayer.on('pause', function() {
+    console.log ('Paused the video');
+    heap.track ('Paused Video');
   });
 </script>
 
