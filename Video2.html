@@ -25,7 +25,7 @@
    heap.track ('Played Video',e);
   });
    
-   videoPlayer.on('pause', function() {
+   videoPlayer.on('pause',(e) => {
     console.log ('Paused the video');
     heap.track ('Paused Video');
   });
