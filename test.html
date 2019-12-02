@@ -20,14 +20,14 @@
 
   var videoPlayer = new Vimeo.Player('myHeapVideo', options);
 
-  videoPlayer.on('play', function() {
-    console.log('Played the video');
-   heap.track ('Played Video');
+  videoPlayer.on('play', (e) => {
+    console.log('Played the video',e);
+   heap.track ('Played Video',e);
   });
    
-   videoPlayer.on('pause', function() {
+   videoPlayer.on('pause',(e) => {
     console.log ('Paused the video');
-    heap.track ('Paused Video');
+    heap.track ('Paused Video',e);
   });
 </script>
 
