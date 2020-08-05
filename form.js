@@ -53,9 +53,7 @@ form.addEventListener('submit', (event) => {
     // validate email
     if (valid) {
         valid = validateEmail(email)
-        var submit_email= document.getElementById('email_submission').value
-        heap.addUserProperties({'email': submit_email})
-      
-;
+        var submit_email= document.getElementById('email_submission').value;
+        heap.addUserProperties({'email': submit_email});
     }
-);
+;
