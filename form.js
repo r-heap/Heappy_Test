@@ -56,7 +56,4 @@ form.addEventListener('submit', (event) => {
         heap.addUserProperties({'email': email})
 ;
     }
-
-    
-
-});
+);
