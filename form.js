@@ -57,11 +57,6 @@ form.addEventListener('submit', (event) => {
 ;
     }
 
-    // stop submitting the form if the data is invalid
-    if (!valid) {
-        event.preventDefault();
-    } else {
-        alert('This is a demo. No form posting.')
-    }
+    
 
 });
