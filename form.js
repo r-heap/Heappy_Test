@@ -50,7 +50,7 @@ form.addEventListener('submit', (event) => {
         valid = requireValue(input.input, input.message);
     });
 
-    // validate email - Where we add the Heap API for email_properties and identity
+    // validate email - Where we add the Heap API for email_properties and identity.  Right now it's on the form submission event, but you could choose any eventListener to send this on. 
     if (valid) {
         valid = validateEmail(email)
         var submit_email= document.getElementById('email_submission').value;
