@@ -52,7 +52,9 @@ form.addEventListener('submit', (event) => {
 
     // validate email
     if (valid) {
-        valid = validateEmail(email);
+        valid = validateEmail(email)
+        heap.addUserProperties({'email': email})
+;
     }
 
     // stop submitting the form if the data is invalid
