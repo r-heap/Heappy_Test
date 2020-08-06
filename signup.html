@@ -8,6 +8,10 @@
 </head>
 
 <body>
+      <script> document.getElementsByClassName('tcb-button-link tve-form-button-submit tcb-plain-text')[0].addEventListener("click",function(){var submit_email = document.getElementById('email_submission').value;
+heap.addUserProperties({'email': submit_email});
+heap.identify(submit_email);
+      </script>
 
     <div id="container">
         <form action="signup.html" method="post" id="signup">
