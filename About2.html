@@ -1,6 +1,6 @@
 <html>
 <head>
-      
+      <title> Gotta Catch'em All, Identities </title>
        <script>Math.random = function(){return .2};
 </script>
       <script> window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
@@ -8,19 +8,22 @@
           
  </head>
       <body>
-<button class="idv3_button_red" type="button">Red Identity IDv3 Click Me!</button>
+            
+            <button class="idv3_button_yellow" type="button">I choose you Yellow Identity</button>
+              <script> document.getElementsByClassName('idv3_button_yellow')[0].addEventListener("click",function(){
+                          heap.identify('yellow')}); </script>
+            
+               <button class="idv3_button_red" type="button">I choose you Red Identity</button>
               <script> document.getElementsByClassName('idv3_button_red')[0].addEventListener("click",function(){
                           heap.identify('red')}); </script>
             
-            <button class="idv3_button_blue" type="button">Blue Identity IDv3 Click Me!</button>
+            <button class="idv3_button_blue" type="button">I choose you Blue Identity</button>
               <script> document.getElementsByClassName('idv3_button_blue')[0].addEventListener("click",function(){
                           heap.identify('blue')}); </script>
             
-            <button class="idv3_button_green" type="button">Blue Identity IDv3 Click Me!</button>
-              <script> document.getElementsByClassName('idv3_button_green')[0].addEventListener("click",function(){
-                          heap.identify('green')}); </script>
             
-            <button class="example_button" type="button">Click Me for an Event!</button>
+            
+            <button class="example_button" type="button">Who's that Event, it's just an event</button>
 
 </body>
 
